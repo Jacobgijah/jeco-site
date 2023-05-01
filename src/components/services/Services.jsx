@@ -10,15 +10,15 @@ const Services = () => {
 
     return (
         <section className="services section" id="services">
-            <h2 className="section__title">Our Services</h2>
-            <span className="section__subtitle">What We Offer</span>
+            <h2 className="section__title">Services</h2>
+            <span className="section__subtitle">What I Offer</span>
 
             <div className="services__container container grid">
                 <div className="services__content">
                     <div>
-                        <i className="uil uil-web-grid services__icon"></i>
+                        <i className="uil uil-arrow services__icon"></i>
                         <h3 className="services__title">
-                            Product <br /> Designer
+                            UI/UX <br /> Designer
                         </h3>
 
                         <span className="services__button" onClick={() => toggleTab(1)}>
@@ -30,38 +30,39 @@ const Services = () => {
                             <div className="services__model-content">
                                 <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
-                                <h3 className="services__modal-title">Product Designer</h3>
+                                <h3 className="services__modal-title">User Interface / User Experience 
+                                    <br /> Designer</h3>
                                 <p className="services__modal-description">
-                                    Service with more than 4 years of experience.
-                                    Providing quality work to clients and companies.
+                                    Over three years of experience services. delivering to clients 
+                                    high-quality work.
                                 </p>
 
                                 <ul className="services__modal-services grid">
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            System Development
+                                            I develop the user interface.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Data Analysis
+                                            Web page development.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Graphic Design & Branding
+                                            I create UX element interactions.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            IT Consultation
+                                            Design and mockups of products for companies.
                                         </p>
                                     </li>
                                 </ul>
@@ -72,9 +73,9 @@ const Services = () => {
 
                 <div className="services__content">
                     <div>
-                        <i className="uil uil-arrow services__icon"></i>
+                        <i className="uil uil-web-grid services__icon"></i>
                         <h3 className="services__title">
-                            UI/UX <br /> Designer
+                            Web Apps <br /> Designer
                         </h3>
 
                         <span className="services__button" onClick={() => toggleTab(2)}>
@@ -86,38 +87,39 @@ const Services = () => {
                             <div className="services__model-content">
                                 <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
-                                <h3 className="services__modal-title">UI/UX Designer</h3>
+                                <h3 className="services__modal-title">Web-based Application 
+                                    <br />Designer</h3>
                                 <p className="services__modal-description">
-                                    Service with more than 4 years of experience.
-                                    Providing quality work to clients and companies.
+                                    Over three years of experience services. delivering to clients 
+                                    high-quality work.
                                 </p>
 
                                 <ul className="services__modal-services grid">
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            System Development
+                                            Responsive Design.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Data Analysis
+                                            Integration with Backend Systems.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Graphic Design & Branding
+                                            API Design and Development.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            IT Consultation
+                                            API Integration.
                                         </p>
                                     </li>
                                 </ul>
@@ -128,9 +130,9 @@ const Services = () => {
 
                 <div className="services__content">
                     <div>
-                        <i className="uil uil-edit services__icon"></i>
+                        <i className="uil uil-analytics services__icon"></i>
                         <h3 className="services__title">
-                            Visual <br /> Designer
+                            Data <br /> Analysis
                         </h3>
 
                         <span className="services__button" onClick={() => toggleTab(3)}>
@@ -142,38 +144,38 @@ const Services = () => {
                             <div className="services__model-content">
                                 <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
 
-                                <h3 className="services__modal-title">Visual Designer</h3>
+                                <h3 className="services__modal-title">Data Scicence Anaylsis</h3>
                                 <p className="services__modal-description">
-                                    Service with more than 4 years of experience.
-                                    Providing quality work to clients and companies.
+                                    Over two years of experience services. delivering to clients 
+                                    high-quality work.
                                 </p>
 
                                 <ul className="services__modal-services grid">
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            System Development
+                                            Data Analysis.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Data Analysis
+                                            Data Visualization.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            Graphic Design & Branding
+                                            I develop Predictive Models.
                                         </p>
                                     </li>
 
                                     <li className="services__modal-service">
                                         <i className="uil uil-check-circle services__modal-icon"></i>
                                         <p className="services__modal-info">
-                                            IT Consultation
+                                            IT Consultation and Training.
                                         </p>
                                     </li>
                                 </ul>
