@@ -23,21 +23,21 @@ export const Footer = () => {
 
                 <div className="footer__social">
                     <a 
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/jacobgijjah"
                         className="footer__social-link" 
                         target="_blank"
                     >
                         <i className="bx bxl-instagram"></i>
                     </a>
                     <a
-                        href="0782671763"
+                        href="https://wa.link/zre58y"
                         className="footer__social-link"
                         target="_blank"
                     >
                         <i className="bx bxl-whatsapp"></i>
                     </a>
                     <a
-                        href="https://twitter.com/"
+                        href="https://twitter.com/gijjah_jacob"
                         className="footer__social-link"
                         target="_blank"
                     >
@@ -46,7 +46,7 @@ export const Footer = () => {
                 </div>
 
                 <span className="footer__copy">
-                    &#169; InnovatorSquad. All rights reserved
+                     jacobgijjah &#169; All rights reserved
                 </span>
             </div>
         </footer>

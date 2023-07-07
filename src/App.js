@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import './App.css';
 import Header from './components/header/header';
 import Home from './components/home/Home';
@@ -14,6 +15,13 @@ import ScrollUp from './components/scrollup/ScrollUp';
 const App = () => {
   return (
       <React.Fragment>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>jacobgijjah</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <meta name="description" content="Software developer" />
+        </Helmet>
+
       <Header/>
 
       <main className='main'>
