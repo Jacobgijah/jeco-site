@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./header.css";
 
 const Header = () => {
-
     /* ============== Change Background Header ============= */
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector(".header");
-        // when the scroll is higher than 200 viewport height, 
-        // add the scroll-header to a tag with the header tag
-        if (this.scrollY >= 80) header.classList.add
-        ("scroll-header");
-        else header.classList.remove("scroll-header");
-    })
+    useEffect(() => {
+        const changeHeaderBackground = () => {
+            const header = document.querySelector(".header");
+            // when the scroll is higher than 80 viewport height, add the scroll-header class to the header tag
+            if (window.scrollY >= 80) {
+                header.classList.add("scroll-header");
+            } else {
+                header.classList.remove("scroll-header");
+            }
+        };
 
-     /* ============== Toggle Menu ============= */
-    const[Toggle, showMenu] = useState(false);
+        window.addEventListener("scroll", changeHeaderBackground);
+        
+        // Cleanup function to remove event listener
+        return () => {
+            window.removeEventListener("scroll", changeHeaderBackground);
+        };
+    }, []);
+
+    /* ============== Toggle Menu ============= */
+    const [Toggle, showMenu] = useState(false);
     const [activeNav, setActiveNav] = useState("#home");
     
     return (
@@ -61,7 +70,7 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <i class="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
+                    <i className="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
                 </div>
 
                 <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
@@ -72,4 +81,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
