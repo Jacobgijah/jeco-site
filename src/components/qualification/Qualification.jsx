@@ -57,7 +57,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">University Of Dodoma</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2023 - Present
+                                        2020 - 2024
                                 </div>
                             </div>
 
@@ -129,11 +129,11 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web development</h3>
-                                <span className="qualification__subtitle">eGovernment Authority - Dodoma</span>
+                                <h3 className="qualification__title">Web & Mobile development</h3>
+                                <span className="qualification__subtitle">FreshInk Digital</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        Aug 2022 - Oct 2022
+                                        May 2024 - Present
                                 </div>
                             </div>
 
@@ -153,21 +153,21 @@ const Qualification = () => {
 
                             <div>
                                 <h3 className="qualification__title">Predictive Modelling</h3>
-                                <span className="qualification__subtitle">University Of Dodoma</span>
+                                <span className="qualification__subtitle">University Of Dodoma - Final year project</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2023 - Present
+                                        Nov 2022 - June 2023
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">UI Designer</h3>
-                                <span className="qualification__subtitle">University Of Dodoma</span>
+                                <h3 className="qualification__title">Web development</h3>
+                                <span className="qualification__subtitle">eGovernment Authority - RIDC</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2023 - Present
+                                        Aug 2022 - Jan 2023
                                 </div>
                             </div>
 

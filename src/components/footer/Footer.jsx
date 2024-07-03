@@ -46,7 +46,7 @@ export const Footer = () => {
                 </div>
 
                 <span className="footer__copy">
-                     jacobgijjah &#169; All rights reserved
+                     jacobgijjah 2024 &#169; All rights reserved
                 </span>
             </div>
         </footer>
