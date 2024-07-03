@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+    const [successMessage, setSuccessMessage] = useState('');
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_nqyjaj9', 'template_v26e1mq', form.current, {
+                publicKey: 'J2mhmP044Uow3nFlo',
+            })
+            .then(
+                () => {
+                    setSuccessMessage('Message successfully sent!');
+                    form.current.reset(); // Clear the form inputs
+                },
+                (error) => {
+                    setSuccessMessage(`Failed to send message: ${error.text}`);
+                },
+            );
+    };
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in Touch</h2>
@@ -18,7 +40,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">jacobgijjah@yahoo.com</span>
 
-                            <a href="mailto:jacobgijjah@yahoo.com" className="contact__button" target="_blank"> 
+                            <a href="mailto:jacobgijjah@yahoo.com" className="contact__button" target="_blank" rel="noopener noreferrer"> 
                                 Write me{" "} 
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
@@ -30,7 +52,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">0782-671-763</span>
 
-                            <a href="https://wa.link/zre58y" className="contact__button" target="_blank"> 
+                            <a href="https://wa.link/zre58y" className="contact__button" target="_blank" rel="noopener noreferrer"> 
                                 Write me{" "} 
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
@@ -42,7 +64,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Messenger</h3>
                             <span className="contact__card-data">techguy.fbacount</span>
 
-                            <a href="#" className="contact__button" target="_blank"> 
+                            <a href="#" className="contact__button" target="_blank" rel="noopener noreferrer"> 
                                 Write me{" "} 
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
@@ -53,12 +75,12 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Write to us your project</h3>
 
-                    <form className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input 
                               type="text"
-                              name="name"
+                              name="user_name"
                               className="contact__form-input"
                               placeholder="Insert your name"
                             />
@@ -68,7 +90,7 @@ const Contact = () => {
                             <label className="contact__form-tag">Mail</label>
                             <input 
                               type="email"
-                              name="email"
+                              name="user_email"
                               className="contact__form-input"
                               placeholder="Insert your email"
                             />
@@ -77,7 +99,7 @@ const Contact = () => {
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Project</label>
                             <textarea 
-                              name="project"
+                              name="message"
                               cols="30"
                               rows="10"
                               className="contact__form-input"
@@ -87,13 +109,14 @@ const Contact = () => {
 
                         <button className="button button--flex">
                             Send Message
-                            <i class="uil uil-message"></i>
+                            <i className="uil uil-message"></i>
                         </button>
                     </form>
+                    {successMessage && <p className="success-message">{successMessage}</p>}
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
