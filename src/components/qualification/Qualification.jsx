@@ -57,7 +57,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">University Of Dodoma</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2020 - 2024
+                                        2020 - 2023
                                 </div>
                             </div>
 

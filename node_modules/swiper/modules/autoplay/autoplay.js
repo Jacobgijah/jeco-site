@@ -84,6 +84,7 @@ export default function Autoplay({
     autoplayTimeLeft = delay;
     const speed = swiper.params.speed;
     const proceed = () => {
+      if (!swiper || swiper.destroyed) return;
       if (swiper.params.autoplay.reverseDirection) {
         if (!swiper.isBeginning || swiper.params.loop || swiper.params.rewind) {
           swiper.slidePrev(speed, true, true);
