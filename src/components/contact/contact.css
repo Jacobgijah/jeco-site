@@ -107,16 +107,22 @@
     resize: none;
 }
 
+.success-message {
+    margin-top: 1rem;
+    font-size: var(--small-font-size);
+    color: green;
+}
+
 /* ================ BREAKPOINTS ================ */
 /* For large devies */
 @media screen and (max-width: 992px) {
     .contact__container {
         column-gap: 3rem;
     }  
-  }
+}
   
-  /* For medium devies */
-  @media screen and (max-width: 768px) {
+/* For medium devies */
+@media screen and (max-width: 768px) {
     .contact__container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
@@ -129,9 +135,9 @@
     .contact__form {
         margin: 0 auto;
     }
-  }
+}
   
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .contact__info {
         grid-template-columns: 1fr;
     }
@@ -139,8 +145,8 @@
     .contact__form {
         width: 100%;
     }
-  }
+}
   
-  /* For small devies */
-  @media screen and (max-width: 350px) {  
-  }
+/* For small devies */
+@media screen and (max-width: 350px) {  
+}
